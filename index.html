@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Maschinensucher App</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:400,900|Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/4e17492ff8.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section class="colored-section" id="title">
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="navbar-column col-lg-6 col-md-8 col-sm-10">
+
+            <a class="navbar-brand" href="https://www.maschinensucher.de">
+              <img class="navbar-img img-responsive" src="images/logo.png" alt="Maschinensucher-Logo">
+            </a>
+          </div>
+
+          <!-- Collapse Button -->
+          <div class="navbar-column col-lg-6 col-md-4 col-sm-2">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible Content -->
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#testimonials">Presse</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#pricing">Tarife</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#cta">Download</a>
+                </li>
+              </ul>
+
+              <!-- Searchbox -->
+              <form class="form-inline searchbox" method="GET" action="https://www.maschinensucher.de/fy/inserat/inseratliste/index">
+                <input class="form-control" type="text" placeholder="Maschinensuche" name="stichwort" />
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Title -->
+        <div class="row">
+          <div class="col-lg-5 col-md-12">
+            <h1 class="big-heading">Ihre Suchmaschine für gebrauchte Maschinen.</h1>
+            <a href="https://apps.apple.com/app/maschinensucher-de-gebrauchte/id1121210407">
+              <button type="button" class="btn btn-secondary btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=de.maschinensucher.app">
+              <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+            </a>
+          </div>
+          <div class="col-lg-7 col-md-12">
+            <img class="title-image" src="images/phone.png" alt="iphone-mockup">
+          </div>
+        </div>
+  </section>
+
+  <!-- Features -->
+  <section class="white-section" id="features">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="feature-box col-lg-4 col-md-6 col-sm-12">
+          <i class="fas fa-check-circle fa-4x feature-icons"></i>
+          <h3 class="feature-title">Einfache Bedienung</h3>
+          <p>Sowohl für iPhones & Android Smartphones entwickelt.</p>
+        </div>
+        <div class="feature-box col-lg-4 col-md-6 col-sm-12">
+          <i class="fas fa-bullseye fa-4x feature-icons"></i>
+          <h3 class="feature-title">Gesteigerte Effizienz</h3>
+          <p>Zeiteinsparung durch Push-Benachrichtigungen.</p>
+        </div>
+        <div class="feature-box col-lg-4 col-md-6 col-sm-12">
+          <i class="fas fa-heart fa-4x feature-icons"></i>
+          <h3 class="feature-title">Kostenlose Nutzung</h3>
+          <p>Download & Nutzung der App komplett kostenlos.</p>
+        </div>
+      </div>
+      <a href="https://www.maschinensucher.de/">
+        <img class="feature-img" src="https://yt3.ggpht.com/JjENX02iB8VWgGNjBAIeDsZm06BNWl7j0K7fh84K58tXKNnrpo4g8VG8N18GAmwCMB_98p1729w=w1440-fcrop64=1,32b75a57cd48a5a8-k-c0xffffffff-no-nd-rj" alt="">
+      </a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="colored-section" id="testimonials">
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false" data-pause="hover">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <h2 class="testimonial-text">Maschinensucher.de ist der führende Online-Marktplatz für Gebrauchtmaschinen.</h2>
+          <img class="testimonial-image" src="https://image.jimcdn.com/app/cms/image/transf/dimension=302x10000:format=png/path/sb83fbf1c34400d50/image/i84537cb2a4e8832e/version/1539773764/image.png" alt="dog-profile">
+          <em>Felicitas Engel, Essen</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">Mehr als 8.100 Kunden aus 60 Ländern inserieren derzeit über 200.000 Maschinen.</h2>
+          <img class="testimonial-image" src="https://image.jimcdn.com/app/cms/image/transf/dimension=524x10000:format=jpg/path/sb83fbf1c34400d50/image/ib4b0d929c85f8e07/version/1561535628/image.jpg" alt="lady-profile">
+          <em>Thorsten Muschler, Essen</em>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Press -->
+  <section class="colored-section" id="press">
+    <img class="press-logo" src="images/certificates.png" alt="certificates">
+
+  </section>
+
+  <!-- Pricing -->
+  <section class="white-section" id="pricing">
+    <h2 class="section-heading">Verkaufen Sie mehr Maschinen!</h2>
+    <p>Monatlich über 3,1 Millionen Besucher mit mehr als 170.000 Kaufanfragen</p>
+
+    <div class="row">
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Standard</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">29 €/Mon.</h2>
+            <p>3 Maschinen gleichzeitig</p>
+            <p>Provisionsfrei</p>
+            <p>Export für Ihre Homepage</p>
+            <p>Internationale Anzeige</p>
+            <p>Automatische Anfragenbeantwortung</p>
+            <p>Geld-zurück-Garantie</p>
+            <a href="https://www.maschinensucher.de/Tarife/">
+              <button class="btn btn-lg btn-block btn-dark" type="button">Tarif wählen</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Professional</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">129 €/Mon.</h2>
+            <p>25 Maschinen gleichzeitig</p>
+            <p>Alle Inhalte aus Standard</p>
+            <p>Plus Datenimport</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <a href="https://www.maschinensucher.de/Tarife/">
+              <button class="btn btn-lg btn-block btn-outline-dark" type="button">Tarif wählen</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Premium</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">299 €/Mon.</h2>
+            <p>100 Maschinen gleichzeitig</p>
+            <p>Alle Inhalte aus Professional</p>
+            <p>Plus Inserat-Spider</p>
+            <p>Plus Kaufgesuche</p>
+            <p>.</p>
+            <p>.</p>
+            <a href="https://www.maschinensucher.de/Tarife/">
+              <button class="btn btn-lg btn-block btn-dark" type="button">Tarif wählen</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="colored-section" id="cta">
+    <div class="container-fluid">
+      <h3 class="big-heading">Wir finden den Käufer für Ihre Maschinen! Starten Sie mit unserer App.</h3>
+      <a href="https://apps.apple.com/app/maschinensucher-de-gebrauchte/id1121210407">
+        <button class="download-button btn btn-lg btn-secondary" type="button"><i class="fab fa-apple"></i> Download</button>
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=de.maschinensucher.app">
+        <button class="download-button btn btn-lg btn-outline-light" type="button"><i class="fab fa-google-play"></i> Download</button>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+      <a href="https://blog.maschinensucher.de/"><i class="social-icon far fa-comment-alt fa-2x"></i></a>
+      <a href="https://www.facebook.com/Maschinensuche/"><i class="social-icon fab fa-facebook-square fa-2x"></i></a>
+      <a href="https://twitter.com/Maschinensuche"><i class="social-icon fab fa-twitter-square fa-2x"></i></a>
+      <a href="https://www.linkedin.com/company/maschinensucher.de-machineseeker.com"><i class="social-icon fab fa-linkedin fa-2x"></i></a>
+      <p>© 2020 Copyright | Jaihee Han</p>
+    </div>
+  </footer>
+</body>
+
+</html>
