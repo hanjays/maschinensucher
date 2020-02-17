@@ -17,18 +17,6 @@ p {
   color: #8f8f8f;
 }
 
-/* Media Queries */
-@media (max-width: 991px) {
-  #title {
-    text-align: center;
-  }
-
-  .title-image {
-    position: static;
-    transform: rotate(0);
-  }
-}
-
 /* Headings */
 .big-heading {
   font-family: "Montserrat";
@@ -64,7 +52,7 @@ p {
 }
 
 .navbar-brand {
-  width: 50%;
+  width: 60%;
 }
 
 .navbar-img {
@@ -166,7 +154,7 @@ p {
 .press-logo {
   width: 25%;
   height: auto;
-  margin: 20px 20px 50px;
+  margin: 0 0 0 30px;
 }
 
 /* Pricing Section */
@@ -196,4 +184,33 @@ p {
 
 .social-icon:hover {
   color: #347ab6ff;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+  .navbar-brand {
+    width: 80%;
+  }
+
+  #title .container-fluid {
+    padding: 3% 15% 7%;
+    text-align: center;
+  }
+
+  .btn-top {
+    margin-bottom: 10%;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .press-logo {
+    width: 35%;
+    height: auto;
+  }
 }
