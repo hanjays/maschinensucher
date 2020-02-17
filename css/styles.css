@@ -186,6 +186,13 @@ p {
   color: #347ab6ff;
 }
 
+/* Return to Top Button */
+.return-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
 /* Media Queries */
 @media (max-width: 991px) {
   .navbar-brand {
